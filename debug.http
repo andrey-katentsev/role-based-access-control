@@ -1,0 +1,23 @@
+##
+POST http://localhost:5162/api/create-roles
+
+###
+POST http://localhost:5162/api/create-user?email=alice@example.com&password=p@S$W0rd
+
+###
+POST http://localhost:5162/login?email=alice@example.com
+
+###
+POST http://localhost:5162/api/assign-role?email=alice@example.com&role=user
+
+###
+GET http://localhost:5162/public
+
+###
+GET http://localhost:5162/secure
+
+###
+GET http://localhost:5162/admin
+
+###
+GET http://localhost:5162/user
